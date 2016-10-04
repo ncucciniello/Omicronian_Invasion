@@ -1,0 +1,28 @@
+html {
+  background: url(img/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.lives {
+  height: 40px;
+  width: 200px;
+  background-color: white;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.lives p {
+  margin-top: 8px;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.ship {
+  position: absolute;
+  display: inline-block;
+}
+
