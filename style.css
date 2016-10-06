@@ -1,13 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 html {
   background: url(img/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .lives {
+  margin-top: 10px;
+  margin-left: 10px;
   height: 40px;
   width: 500px;
   background-color: white;
@@ -26,7 +33,16 @@ html {
   height: 38px;
 }
 
+.hud {
+  margin-top: 10px;
+  margin-right: 10px;
+  float: right;
+  font-size: 30px;
+  color: white;
+}
+
 .ship {
+  margin-top: 25px;
   position: absolute;
   display: inline-block;
 }
