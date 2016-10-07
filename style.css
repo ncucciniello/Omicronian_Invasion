@@ -47,8 +47,17 @@ html {
   display: inline-block;
 }
 
-.ship-img {
+/*.ship-img {
   width:262px;
   height: 92px;
+}*/
+
+main img {
+  margin-top: 25px;
+  position: absolute;
+  display: inline-block;
+  width:262px;
+  height: 92px;
+  padding-top:
 }
 
