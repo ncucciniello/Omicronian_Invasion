@@ -24,22 +24,21 @@ $(function() {
           }
     }.bind(newDiv), 50);
   };
-
   // when the ship is clicked it will explode, disappear, and you will
   // gain 10 pts per ship killed.
-  function shipExp(){
-    // var currentPts = 0;
+    $('main').click(function (event) {
+     var currentPts = 0;
     console.log('EXPLODE!');
-    // $(this).css('background','url(img/boom.png)');
-    // $(this).fadeOut(800);
-    // $(this).delay( 5000, function(){
-    //   $(this).remove();
-    //   });
+    $('.ship').css('background','url(img/boom.png)');
+    $('.ship').fadeOut(800);
+    $('.ship').delay( 800, function(){
+      $('.ship').remove();
+      });
 
     var currentVal = parseInt($('.score').text(),10);
     var newVal = currentVal + 10;
     $('.score').text(newVal);
-  };
+  });
 
   // Life tracker
   var lives = $('.life').length;
@@ -61,8 +60,5 @@ $(function() {
         counter++
       }
      }, 2000);
-
-  //  When the ship is click it will fire the funtion to kill it.
-    $('main').click(shipExp);
   });
 });
