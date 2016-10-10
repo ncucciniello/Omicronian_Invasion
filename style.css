@@ -3,6 +3,16 @@
   margin: 0;
 }
 
+@font-face {
+    font-family: futureFont;
+    src: url(img/fr-title.ttf);
+}
+
+@font-face {
+    font-family: futureBold;
+    src: url(img/fr-bold.ttf);
+}
+
 html {
   background: url(img/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -16,29 +26,66 @@ html {
   margin-top: 10px;
   margin-left: 10px;
   height: 40px;
-  width: 500px;
-  background-color: white;
-  border-radius: 5px;
+  width: 450px;
+  color: black;
+  background-color: #fff5e7;
+  border: 2px solid black;
+  border-radius: 40px;
   display: inline-block;
 }
 
 .lives p {
-  margin-top: 8px;
-  margin-left: 5px;
-  font-size: 20px;
+  font-family: futureFont;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 30px;
   display: inline-block;
 }
 
 .lives img {
-  height: 38px;
+  height: 25px;
+  display: inline-block;
 }
 
-.hud {
+.name {
+  text-align: center;
   margin-top: 10px;
-  margin-right: 10px;
+  height: 40px;
+  width: 450px;
+  color: black;
+  background-color: #fff5e7;
+  border: 2px solid black;
+  border-radius: 30px;
   float: right;
+}
+
+.name p {
+  font-family: futureFont;
+  margin-top: 5px;
   font-size: 30px;
-  color: white;
+}
+
+.hudScore {
+  text-align: center;
+  margin-top: 10px;
+  height: 40px;
+  width: 450px;
+  color: black;
+  background-color: #fff5e7;
+  border: 2px solid black;
+  border-radius: 30px;
+  float: right;
+}
+
+.hudScore p {
+  font-family: futureFont;
+  margin-top: 5px;
+  font-size: 30px;
+}
+
+.bold {
+  font-family: futureBold;
 }
 
 .ship {
@@ -49,13 +96,4 @@ html {
   position: absolute;
   display: inline-block;
 }
-
-/*main img {
-  margin-top: 25px;
-  position: absolute;
-  display: inline-block;
-  width:262px;
-  height: 92px;
-  padding-top:
-}*/
 
