@@ -19,7 +19,7 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 .lives {
@@ -95,5 +95,34 @@ html {
   width: 262px;
   position: absolute;
   display: inline-block;
+}
+
+.loser {
+  width: 50%;
+  height: 200px;
+  margin: 10% 25%;
+  background-color: #fff5e7;
+  border: 2px solid black;
+  border-radius: 30px;
+  text-align: center;
+  display: none;
+  position: absolute;
+}
+
+h1 {
+  font-family: futureBold;
+  margin-top: 20px;
+}
+
+button {
+  text-align: center;
+  font-size: 30px;
+  font-family: futureFont;
+  background-color: white;
+  margin-top: 30px;
+  height: 60px;
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 

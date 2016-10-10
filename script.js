@@ -7,7 +7,7 @@ $(function() {
 
   function spawnShip() {
 
-    // variables for actions in spawnSship
+    // variables for actions in spawnShip
     var newDiv = $('<div />').attr('class', 'ship').appendTo('main');
     var rndmNum = Math.floor((Math.random() * 500) + 25);
     var distance = -270;
@@ -44,20 +44,20 @@ $(function() {
       var newVal = currentVal + 10;
       $('.score').text(newVal);
     });
-  };
 
-  // // Life tracker
-  // var lives = $('.life').length;
-  // if (lives === 0) {
-  //   alert('You have lost!');
-  // };
+    // Life tracker
+    var lives = $('.life').length;
+    if (lives === 0) {
+      $('.loser').css('display', 'block');
+    };
+  };
 
   // Fires the function for the ship to fly on page load.
   $(document).ready(function() {
-    setInterval(function () {
+    var start = setInterval(function () {
       var counter = 0
       var numOfShips = Math.floor((Math.random() * 3) + 1);
-      while (counter < 1) {
+      while (counter < numOfShips) {
         spawnShip();
         counter++
       }
