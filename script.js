@@ -29,15 +29,16 @@ $(function() {
     }.bind(newDiv), 50);
 
     // when the ship is clicked it will explode and disappear
-    $('main').click(function() {
+    $('main').click(function(e) {
       var currentPts = 0;
       console.log('EXPLODE!');
-      $('.ship').css('background','url(img/boom.png)');
-      $('.ship').fadeOut(800);
-      $('.ship').delay( 800, function(){
-        $('.ship').remove();
+      $(e.target).css('background','url(img/boom.png)');
+      $(e.target).fadeOut(800);
+      $(e.target).delay( 800, function(){
+        $(e.target).remove();
         });
       clearInterval(removeLife);
+
 
       // gain 10 pts per ship killed.
       var currentVal = parseInt($('.score').text(), 0);
