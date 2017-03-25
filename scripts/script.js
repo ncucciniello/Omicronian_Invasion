@@ -32,7 +32,7 @@ $(function() {
     $('main').click(function(e) {
       var currentPts = 0;
       console.log('EXPLODE!');
-      $(e.target).css('background','url(img/boom.png)');
+      $(e.target).css('background','url(assets/imgs/boom.png)');
       $(e.target).fadeOut(800);
       $(e.target).delay( 800, function(){
         $(e.target).remove();
@@ -54,14 +54,14 @@ $(function() {
   };
 
   // Fires the function for the ship to fly on page load.
-  $(document).ready(function() {
-    var start = setInterval(function () {
-      var counter = 0
-      var numOfShips = Math.floor((Math.random() * 3) + 1);
-      while (counter < numOfShips) {
-        spawnShip();
-        counter++
-      }
-     }, 2000);
+  // $(document).ready(function() {
+  //   var start = setInterval(function () {
+  //     var counter = 0
+  //     var numOfShips = Math.floor((Math.random() * 3) + 1);
+  //     while (counter < numOfShips) {
+  //       spawnShip();
+  //       counter++
+  //     }
+  //    }, 2000);
   });
 });

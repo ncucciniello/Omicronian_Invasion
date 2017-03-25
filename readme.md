@@ -4,7 +4,7 @@ Landing page referance:
 ![alt tag](landing-img/referance.png)
 
 Wireframe:
-![alt tag](img/wireframe.png)
+![alt tag](assets/imgs/wireframe.png)
 
 
 Approach taken: <br>
