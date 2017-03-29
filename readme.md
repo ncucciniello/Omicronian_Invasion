@@ -1,8 +1,5 @@
 Futurama: Omicronian Invasion
 
-Landing page referance:
-![alt tag](landing-img/referance.png)
-
 Wireframe:
 ![alt tag](assets/imgs/wireframe.png)
 
