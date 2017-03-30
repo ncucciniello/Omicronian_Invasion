@@ -4,10 +4,16 @@ $(() => {
   function startGame() {
 
     // variables for actions in startGame
-    var newShip = $('<div />').attr('class', 'ship').appendTo('main');
     var distance = -270;
     var rndmNum = Math.floor((Math.random() * 500) + 25);
     var rndmSpeed = Math.floor((Math.random() * 20) + 15);
+    var newShip = $('<div />')
+                    .attr('class', 'ship')
+                    .appendTo('main')
+                    .css({
+                      'margin-top': rndmNum,
+                      'left': distance
+                    });
 
 
     // adds on click listener to each ship so when it's clicked it will explode and disappear.
@@ -29,7 +35,6 @@ $(() => {
 
     // gives ship a random locaion/speed and removes a life if the ship makes it past
     var spawnShip = setInterval(function() {
-      newShip.css('margin-top', rndmNum);
       newShip.css('left', distance);
         if (distance <= $(window).width()) {
           distance += rndmSpeed;
