@@ -1,5 +1,5 @@
 // console.log('js is linked');
-$(() => {
+(function(){
 
   function startGame() {
 
@@ -46,9 +46,13 @@ $(() => {
     }, 50);
   };
 
-
   // Fires the function for the ship to fly on page load.
   $(document).ready(function() {
+
+    $('.button').on('click', function(){
+      location.reload(true);
+    });
+
     var start = setInterval(function() {
       var counter = 0
       var numOfShips = Math.floor((Math.random() * 3) + 1);
@@ -67,4 +71,4 @@ $(() => {
     }, 2000);
   });
 
-});
+})();
