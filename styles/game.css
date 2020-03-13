@@ -21,7 +21,7 @@ html {
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
-  cursor: crosshair;
+  cursor: url('../assets/imgs/cursor.png') 37 37, crosshair;
 }
 
 header {
